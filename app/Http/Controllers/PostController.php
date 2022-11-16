@@ -12,7 +12,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::latest()->paginate(3);
+        $posts = Post::latest()->paginate();
 
         return view('admin.posts.index', compact('posts'));
     }
@@ -108,7 +108,7 @@ class PostController extends Controller
 
         $posts = Post::where('institution', 'LIKE', "%{$request->search}%")
                         ->orWhere('body', 'LIKE', "%{$request->search}%")
-                        ->paginate(3);
+                        ->paginate();
 
         return view('admin.posts.index', compact('posts', 'filters'));
     }

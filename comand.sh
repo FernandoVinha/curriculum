@@ -5,3 +5,4 @@ php artisan make:model Post -mc
 php artisan migrate
 php artisan make:request StoreUpdatePost
 php artisan migrate:refresh
+composer require laravel/breeze --dev
