@@ -18,6 +18,8 @@ class CreatePostsTable extends Migration
             $table->string('institution', 160);
             $table->text('body');
             $table-> string('image');
+            $table->timestamp('start');
+            $table->timestamp('end')->nullable();
             $table->timestamps();
         });
     }

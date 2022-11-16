@@ -6,3 +6,4 @@ php artisan migrate
 php artisan make:request StoreUpdatePost
 php artisan migrate:refresh
 composer require laravel/breeze --dev
+php artisan make:migration add_date_to_table

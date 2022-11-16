@@ -10,4 +10,12 @@
 <input type="file" name="image" id="image" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner">
 <input name="institution" id="institution" placeholder="institution" value="{{ $post->institution ?? old('institution') }}" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner">
 <textarea name="body" id="body" placeholder="body" cols="30" rows="4" placeholder="body" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner">{{ $post->body ?? old('body') }}</textarea>
+<div>
+    <p>Start</p>
+    <input type="date" class="form_control" id="start" name ="start">
+</div>
+<div>
+    <p>End</p>
+    <input type="date" class="form_control" id="end" name ="end">
+</div>
 <button type="submit" class="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none">Enviar</button>
