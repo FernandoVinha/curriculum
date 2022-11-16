@@ -2,7 +2,7 @@
 
 @extends('admin.layouts.app')
 
-@section('title', 'Criar Novo Post')
+@section('institution', 'Criar Novo Post')
 
 @section('content')
     <h1 class="text-center text-3xl uppercase font-black my-4">Novo Post</h1>

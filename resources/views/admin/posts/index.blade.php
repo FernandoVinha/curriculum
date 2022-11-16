@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title', 'Listagem dos Posts')
+@section('Listagem dos Posts')
 
 @section('content')
 <h1> curiculo </h1>
@@ -24,6 +24,7 @@
         <a href="{{route('posts.edit',$post->id)}}">editar</a>
     ]
     </p>
+
 @endforeach
 <hr>
 @if (isset($filters))
